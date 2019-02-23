@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding:0;
+
+
+}
+body{
+	font-size: 20px ;
+	font-family: 'Indie Flower', cursive;
+	background-image: url('background2.jpg');
+  background-size: 1425px;
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+#serch-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-40%,-40%);
+  background: black;
+  height: 35px;
+  border-radius: 50px;
+  padding: 20px ;
+}
+#serch-btn{
+  color: white;
+  float: right;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center; 
+ 
+}
+#serch-text{
+  background: none;
+  border:none;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  float: left;
+  padding:0;
+  font-size: 26px;
+  transition:3s;
+  line-height: 40px;
+  width:0px;
+}
+#serch-box:hover > #serch-text{
+  width: 250px;
+  color: #D20;
+  padding: 0 6px;
+  
+
+}
+
+#sidebar {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:150px;
+  height:95vh;
+  background:#1a1a1a;
+  text-align:center;
+  transform-origin:left;
+  transform:perspective(1200px) rotateY(90deg);
+  transition:all 400ms ease;
+}
+#sidebar ul li {
+  color:white;
+  font-size:20px;
+  width:100%;
+  height:90px;
+
+  line-height:50px;
+}
+#sidebar ul li:hover{
+  background: #D20;
+
+}
+#sidebar.active {
+  transform:perspective(1200px) rotateY(0deg);
+}
+
+
+
+#toggle-btn {
+  position:absolute;
+  left:30px;
+  top:20px;
+  transition:left 200ms linear 0ms,transform 3s00ms ease 100ms;
+}
+#toggle-btn.active {
+  left:230px;
+  transform:rotate(360deg);
+}
+#toggle-btn span {
+  position:relative;
+  top:0px;
+  display:block;
+  background:#1a1a1a;
+  width:30px;
+  height:5px;
+  margin:5px 0px;
+  cursor:pointer;
+  transition:transform 300ms ease 200ms;
+}
+#toggle-btn.active span:nth-child(1) {
+  top:10px;
+  transform:rotate(45deg);
+}
+#toggle-btn.active span:nth-child(2) {
+  opacity:0;
+}
+#toggle-btn.active span:nth-child(3) {
+  top:-10px;
+  transform:rotate(-45deg);
+}
+#serch-box ul  {
+  /*display: none;*/
+  position: relative;
+  background: black;
+
+  margin-top: 50px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px; 
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+
+}
+
+#serch-box ul li{
+  list-style: none;
+  display: block;
+  margin:0;
+
+}
+#serch-box ul li a{
+  text-decoration: none;
+  color: white;
+
+
+}
+#serch-box ul :hover{
+  background: red;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="Versuri in romana">
+	<link rel="stylesheet" href="style_meniu.css">
+	<link type="text/html" href="serch.html">
+
+	<title>Real_lyrics>Home</title>
+</head>
+<body>
+	<div id="sidebar">
+  <ul>
+    <li>Home</li>
+    <li>Events</li>
+    <li>Top autori</li>
+    <li>Special</li>
+    <li>Create</li>
+    <li>Help</li>
+  </ul>
+</div>
+<div id="toggle-btn" onclick="toggleSidebar(this)">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+	
+
+	<div id="serch-box">
+		<input type="text" id="serch-text" placeholder="Serch lyrics"
+			
+		>
+
+		<a href="#" onclick="">
+			<i class="fas fa-search" id="serch-btn"></i>
+		</a>
+			<ul>
+			
+				<li><a href="#" id="test1"></a></li>
+				<li><a href="#" id="test2"></a></li>
+				<li><a href="#" id="test3"></a></li>
+				<li><a href="#" id="test4"></a></li>
+				
+
+			</ul>
+		
+
+	</div>
+
+
+	<script>
+		function toggleSidebar(ref) {
+			ref.classList.toggle('active');
+			document.getElementById('sidebar').classList.toggle('active');
+		}
+		function serch() {
+			var B =document.getElementById('B')
+		}
+	</script>
+	<script type="text/javascript" src="app_links.js"></script>
+</body>
+</html>
